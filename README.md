@@ -1,5 +1,4 @@
 # Answer Quality Evaluator
-<<<<<<< HEAD
 
 ## 1) One-line summary
 
