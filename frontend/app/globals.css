@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-bg text-slate-100 antialiased;
+}
+
+.card {
+  @apply rounded-lg border border-slate-800 bg-surface p-4 shadow-sm;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full bg-surfaceMuted px-2 py-0.5 text-xs text-slate-200;
+}
+
