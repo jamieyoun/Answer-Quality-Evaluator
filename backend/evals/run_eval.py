@@ -41,14 +41,16 @@ def run_eval(
     if pipelines is None:
         pipelines = ["A", "B", "C"]
 
-    base_dir = Path(__file__).resolve().parents[1]
-    q_path = Path(questions_path) if questions_path else base_dir / "data" / "evalset" / "questions.jsonl"
-    gt_path = base_dir / "data" / "evalset" / "ground_truth.jsonl"
-    docs_dir = base_dir / "data" / "kb" / "docs"
+    # Data lives at repo root (data/kb/docs, data/evalset/); eval output under backend/
+    repo_root = Path(__file__).resolve().parents[2]
+    backend_dir = Path(__file__).resolve().parents[1]
+    q_path = Path(questions_path) if questions_path else repo_root / "data" / "evalset" / "questions.jsonl"
+    gt_path = repo_root / "data" / "evalset" / "ground_truth.jsonl"
+    docs_dir = repo_root / "data" / "kb" / "docs"
 
     ground_truth = load_ground_truth(gt_path)
 
-    out_root = base_dir / out_dir
+    out_root = backend_dir / out_dir
     out_root.mkdir(parents=True, exist_ok=True)
 
     run_id = _now_run_id()

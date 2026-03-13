@@ -1,0 +1,14 @@
+{
+  "name": "answer-quality-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Internal evaluation workbench for Sales/CS answer quality (backend + frontend).",
+  "scripts": {
+    "postinstall": "npm install --prefix frontend",
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix frontend",
+    "lint": "npm run lint --prefix frontend",
+    "install:frontend": "npm install --prefix frontend"
+  }
+}
