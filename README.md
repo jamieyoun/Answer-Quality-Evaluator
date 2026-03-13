@@ -29,22 +29,6 @@ This repo exists to make answer quality evaluation **inspectable, repeatable, an
   - Inspect retrieved evidence chunks and citations.
   - View per-pipeline score summaries and failure patterns.
 
-## 4) Demo (GIF placeholder + sample screenshots)
-
-> **GIF placeholder:** `demo/answer-quality-evaluator-demo.gif`  
-> (Insert a short screen recording of: selecting a question → running A/B/C → opening the evidence drawer → viewing the leaderboard.)
-
-Sample views:
-
-- **Pipeline comparison:**  
-  Three columns (A/B/C) with answers, citation chips (`KB-019 — Exceptions & edge cases`), and per-dimension scores stacked at the top.
-- **Evidence drawer:**  
-  Right-hand panel listing retrieved chunks with `doc_id`, section header, similarity score, and expandable full text.
-- **Run summary:**  
-  Leaderboard table with average Accuracy / Completeness / Citation Quality, plus failure tag counts (e.g., `missed_exception`, `weak_citations`).
-
-## 5) How it works (architecture diagram in ASCII + request flow)
-
 ### High-level architecture
 
 ```text
