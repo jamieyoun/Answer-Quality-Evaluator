@@ -1,4 +1,5 @@
 # Answer Quality Evaluator
+<<<<<<< HEAD
 
 ## 1) One-line summary
 
@@ -310,4 +311,3 @@ curl "http://127.0.0.1:8000/eval/summary" \
   --get \
   --data-urlencode "run_id=eval_20260312T120000"
 ```
-
